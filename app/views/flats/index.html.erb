@@ -1,0 +1,16 @@
+
+<div class="row d-flex justify-content-around align-items-center items">
+  <%@flats.each do |flat|%>
+  <div class="col-sm-4" >
+          <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card" style="height: 20rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%=flat.name%></h5>
+        <p class="card-text"><%= flat.description %></p>
+        <p class="card-text"><%= flat.address %></p>
+        <a href="#" class="btn btn-primary d-flex align-items-end align-self-end">Link to click</a>
+      </div>
+    </div>
+  </div>
+  <%end%>
+</div>
